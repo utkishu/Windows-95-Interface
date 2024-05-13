@@ -4,6 +4,7 @@
 #include "Framework/BaseLevel.h"
 #include "Framework/Input.h"
 #include "Framework/Collision.h"
+#include "Framework/GameObject.h"
 #include <string>
 #include <iostream>
 
@@ -21,9 +22,6 @@ private:
 	sf::Texture windowsTabTex;
 	sf::Texture windowsStartTex;
 	sf::Texture RecycleBinTex;
-
-
+	
 	sf::Sprite windowsTab;
-	sf::Sprite windowsStart;
-	sf::Sprite RecycleBinIcon;
 };
