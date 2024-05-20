@@ -1,4 +1,6 @@
 #include "Level.h"
+#include"Framework/Utilities.h"
+
 
 Level::Level(sf::RenderWindow* hwnd, Input* in)
 {
@@ -10,9 +12,13 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 
 	}
 
+
+	font.loadFromFile("font/arial.ttf");
+	Text.setFont(font);
 	windowsTab.setTexture(windowsTabTex);
 	windowsTab.setScale(50.0f, 2.0f); // Example: doubling the size
-
+	//windowsTab.setPosition(SCREEN_WIDTH, SCREEN_HEIGHT-windowsTab.getScale().y);
+	//std::cout << "Position: " << SCREEN_WIDTH - windowsTab.getScale().x << ":" << windowsTab.getScale().y << std::endl;
 }
 
 Level::~Level()
@@ -23,12 +29,18 @@ Level::~Level()
 // handle user input
 void Level::handleInput(float dt)
 {
-
+	if (input->isKeyDown(sf::Keyboard::Escape))
+	{
+		std::cout << "Exit Button Pressed\n";
+		exit(0);
+	}
 }
 
 // Update game objects
 void Level::update(float dt)
 {
+
+
 
 	// Check for collision with mouse
 	sf::Vector2i mousePos(input->getMouseX(),input->getMouseY());

@@ -8,6 +8,8 @@
 #include <string>
 #include <iostream>
 
+
+
 class Level : public BaseLevel{
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);
@@ -24,4 +26,8 @@ private:
 	sf::Texture RecycleBinTex;
 	
 	sf::Sprite windowsTab;
+
+	sf::Text Text;
+
+	sf::Font font;
 };

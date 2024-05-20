@@ -6,7 +6,7 @@
 #include <iostream>
 #include "Level.h"
 
-
+#include"Framework/Utilities.h"
 
 sf::View getLetterboxView(sf::View view, int windowWidth, int windowHeight) {
 
@@ -95,6 +95,9 @@ void windowProcess(sf::RenderWindow* window, Input* in, sf::View& view)
 
 int main()
 {
+
+    InitializeResolution();
+
     sf::View view;
 
     // Create the main window with a fixed size
@@ -115,6 +118,7 @@ int main()
     sf::Clock clock;
     float deltaTime;
 
+    printDebugMessage(window, "Position: %d:%d", SCREEN_WIDTH - 800, 600);
     // Game Loop
     while (window.isOpen())
     {

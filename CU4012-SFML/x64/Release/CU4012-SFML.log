@@ -1,1 +1,27 @@
-﻿  CU4012-SFML.vcxproj -> C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\x64\Release\CU4012-SFML.exe
+﻿  Level.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vadefs.h(194,62): error C2338: static_assert failed: 'va_start argument must not have reference type and must not be parenthesized'
+C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\CU4012-SFML\Framework\Utilities.h(44,5): message : see reference to class template instantiation '__vcrt_assert_va_start_is_not_reference<const std::string &>' being compiled
+C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\CU4012-SFML\Level.cpp(47,49): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\CU4012-SFML\Level.cpp(47,37): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+  Main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vadefs.h(194,62): error C2338: static_assert failed: 'va_start argument must not have reference type and must not be parenthesized'
+C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\CU4012-SFML\Framework\Utilities.h(44,5): message : see reference to class template instantiation '__vcrt_assert_va_start_is_not_reference<const std::string &>' being compiled
+C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\CU4012-SFML\Main.cpp(99,5): error C2660: 'InitializeResolution': function does not take 0 arguments
+C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\CU4012-SFML\Framework\Utilities.h(30,13): message : see declaration of 'InitializeResolution'
+C:\Users\raouy\OneDrive\Documents\CU4012-GamesProgramming\Github Reopos\Windows-95-Interface\CU4012-SFML\Main.cpp(99,5): message : while trying to match the argument list '()'
